@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="ProyectoSegundoParcial.CafeFrio"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ProyectoSegundoParcial"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="32" Margin="19,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"><Run Text="Código del"/><Run Text=" "/><Run Text="producto"/></TextBlock>
+        <TextBlock HorizontalAlignment="Right" Height="32" Margin="0,151,640,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Text="Descripción del producto"/>
+        <TextBlock HorizontalAlignment="Left" Height="32" Margin="19,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" Text="Precio"/>
+        <TextBlock HorizontalAlignment="Left" Height="32" Margin="19,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" Text="Descuento"/>
+        <TextBlock HorizontalAlignment="Left" Height="32" Margin="19,313,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"><Run Text="Prov"/><Run Text="e"/><Run Text="edor"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="32" Margin="19,365,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" Text="Tipo"/>
+
+        <TextBox x:Name="txtcodigo" HorizontalAlignment="Left" Height="32" Margin="195,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="213"/>
+        <TextBox x:Name="txtproducto"  HorizontalAlignment="Left" Height="32" Margin="195,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="txtprecio"  HorizontalAlignment="Left" Height="32" Margin="195,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="txtdescuento"  HorizontalAlignment="Left" Height="32" Margin="195,257,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="txtproveedor"  HorizontalAlignment="Left" Height="32" Margin="195,311,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
+
+        <StackPanel x:Name="radiobottons"  Margin="195,366,455,10.6" RenderTransformOrigin="1.181,0.531">
+            <RadioButton Content="Chico" HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="54"/>
+            <RadioButton Content="Grande" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="70" />
+        </StackPanel>
+
+        <StackPanel Margin="496,88,32,196.6">
+            <Label Content="Toppings"/>
+            <CheckBox Content="Snickers"/>
+            <CheckBox Content="Reeses"/>
+            <CheckBox Content="Fresas"/>
+            <CheckBox Content="Mazapan"/>
+            <CheckBox Content="Pay de Queso"/>
+            <CheckBox Content="Milky Way"/>
+            <CheckBox Content="Oreo"/>
+            <CheckBox Content="Brownie"/>
+        </StackPanel>
+
+        <TextBlock HorizontalAlignment="Left" Margin="498,265,0,0" TextWrapping="Wrap" Text="Marca" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="580,267,0,0" VerticalAlignment="Top" Width="198">
+            <ComboBoxItem Content="Opcion 1"/>
+            <ComboBoxItem Content="Opcion 2"/>
+            <ComboBoxItem Content="Opcion 3"/>
+        </ComboBox>
+    </Grid>
+</UserControl>
